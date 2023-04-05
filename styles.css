@@ -1,0 +1,174 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url("assets//fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+/* summary colors */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: HankenGrotesk, sans-serif;
+}
+@media (min-width: 1024px) {
+  html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+p {
+  font-size: 18px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  main {
+    width: 80%;
+    height: 70%;
+    flex-direction: row;
+  }
+}
+
+.result,
+.summary {
+  flex: 1;
+}
+
+/*   RESULT   */
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  color: hsl(241deg, 100%, 89%);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: hsl(241deg, 81%, 54%);
+}
+@media (min-width: 1024px) {
+  .result {
+    border-radius: 50px;
+  }
+}
+.result h4 {
+  font-size: 1.5rem;
+}
+.result p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.result p.quality {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+}
+.result__score {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(234deg, 85%, 45%), hsl(241deg, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result__score span {
+  display: block;
+}
+.result__score span:first-child {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.result__score span:last-child {
+  font-size: 1rem;
+  color: hsl(241deg, 100%, 89%);
+}
+
+/*   SUMMARY   */
+.summary {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summary h4 {
+  font-size: 2rem;
+}
+.summary__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-block: 0.7rem;
+  border-radius: 20px;
+  background-color: #fff0f0;
+}
+.summary__container p#reaction {
+  color: hsl(0deg, 100%, 67%);
+}
+.summary__container p#memory {
+  color: hsl(39deg, 100%, 56%);
+}
+.summary__container p#verbal {
+  color: hsl(166deg, 100%, 37%);
+}
+.summary__container p#visual {
+  color: hsl(234deg, 85%, 45%);
+}
+.summary__container p.title {
+  flex: 1;
+  font-size: 1.3rem;
+  margin-inline: 1rem;
+}
+@media (min-width: 600px) {
+  .summary__container p.title {
+    font-size: 1.5rem;
+  }
+}
+.summary__container__score span {
+  font-size: 1.3rem;
+}
+@media (min-width: 600px) {
+  .summary__container__score span {
+    font-size: 1.5rem;
+  }
+}
+.summary__container__score span:first-child {
+  font-weight: 900;
+}
+.summary__container__score span:last-child {
+  color: hsl(241deg, 100%, 89%);
+}
+.summary .continue {
+  margin-block: 1.2rem;
+}
+.summary .continue button {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  background-color: hsl(224deg, 30%, 27%);
+}
+.summary .continue button:hover {
+  background-color: hsl(241deg, 81%, 54%);
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
