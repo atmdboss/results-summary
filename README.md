@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/atmdboss/results-summary)
-- Live Site URL: [Add live site URL here](https://atmdboss.github.io/results-summary/)
+- [Solution URL](https://github.com/atmdboss/results-summary)
+- [Live Site URL](https://atmdboss.github.io/results-summary/)
 
 ## My process
 
